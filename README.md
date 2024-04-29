@@ -1,5 +1,3 @@
-
-
 <h1 align="center">
   <br>
   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://f.hubspotusercontent20.net/hubfs/2829524/Copia%20de%20LOGOTIPO_original-2.png"></a>
@@ -24,7 +22,14 @@
   </a>
 </p>
 
-Breve descripción del proyecto
+# cypress-nodejs-automatizacion-Backend
+
+
+Este proyecto de automatización está diseñado para realizar pruebas exhaustivas del backend de una aplicación web utilizando Cypress junto con Node.js. Cypress es una herramienta moderna y potente de pruebas de extremo a extremo que permite simular interacciones del usuario y verificar comportamientos en la capa de backend.
+
+En este proyecto, utilizaremos Node.js para crear scripts de prueba flexibles y robustos que se ejecuten con Cypress. El objetivo principal es automatizar el proceso de prueba para garantizar la funcionalidad correcta y el rendimiento óptimo del backend de la aplicación web.
+
+
 <p align="center">
   <a href="#topicos">Topicos</a> •
   <a href="#instalación-y-ejecución">Instalación y ejecución</a> •
@@ -33,104 +38,49 @@ Breve descripción del proyecto
   <a href="#download">Consideraciones</a> •
   <a href="#download">Tecnologias</a> •
   <a href="#credits">Autores</a> •
-  <a href="#related">Relacionados</a> •
-  <a href="#roadmap">Roadmap</a>
 </p>
-
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
 
 ## Topicos
 
-* Karate
-* Java
-* Rest
-* Gherkin
-* Cucumber
+* Cypress
+* JavaScript
+* NodeJS
 
 ## Instalación y ejecución
 
-Para clonar y ejecutar está aplicación, necesitas [Git](https://git-scm.com) and [Java JDK](https://nodejs.org/en/download/) instalados en tu equipo. Desde la linea de comando:
+Para clonar y ejecutar está aplicación, necesitas [Git](https://git-scm.com),  [NodeJS](https://nodejs.org/en/download/) y [Cypress](https://www.cypress.io/) instalados en tu equipo. Desde la linea de comando:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
+$ git clone https://github.com/somospragma/qa-backend-cypress-nodejs.git
 
 # Go into the repository
-$ cd electron-markdownify
+$ cd qa-backend-cypress-nodejs
 
 # Install dependencies
 $ npm install
 
 # Run the app
-$ npm start
+
+$ npm run cy:open,
+$ npm run cy:run,
 ```
-
-### Run con java jar
-```
-java -jar karate-1.4.0.jar <ruta_del_archivo.feature>
-
-java -jar karate-1.4.0.jar -Dkarate.options="--config karate-config.js" -DbaseUrl=https://miotraurl.com ruta_del_archivo.feature
-
-java -jar karate-1.4.0.jar -Dkarate.options="--config karate-config.js" ruta_del_archivo.feature
-```
-
-#### ejemplo run con java jar
-
-```
- java -jar karate-1.4.0.jar src/test/java/users/get/user-get.feature
- 
-```
-
-### Run con gradle
-
-```
-
- test --tests <nombre_de_clase>.<nombre_del_método> -D<propiedades_del_sistema>
- 
- test --tests SampleTesClassRunner -DbaseUrl=https://reqres.in 
- 
- test --tests SampleTesClassRunner.testTagsMethod -DbaseUrl=https://reqres.in 
- 
- test -Dtest=SampleTesClassRunner#testTagsMethod
- 
-```
-
-#### ejemplo run con gradle
-
-```
- gradle test --tests ManagementUserTest.testParallel -DbaseUrl=https://reqres.in 
- 
- gradle test --tests UserGetRunner -DbaseUrl=https://reqres.in 
- gradle test --tests UserGetRunner.userGet -DbaseUrl=https://reqres.in 
- 
- gradle test -Dtest=UserGetRunner#userGet -DbaseUrl=https://reqres.in 
- 
-```
-
 
 ## Descarga
 
-Puedes descargar el proyecto en el enlace [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) 
+Puedes descargar el proyecto en el enlace [download](https://github.com/somospragma/qa-backend-cypress-nodejs/archive/refs/heads/master.zip) 
 
 ## Consideraciones
-El proyecto usa como servicio base el servicio demo Reqres, el correcto funcionamiento de los casos de uso dependeran de la disponibilidad del servicio demo en cuestion
+El proyecto usa como proyecto base los servicios del proyecto alojado en la carpeta de 'API', la cual se debe arrancar antes de ejecutar las pruebas.
 
 ## Tecnologias
--   [JDK java]
--   [Karate]
--   [Gradle]
+-   [express](https://expressjs.com/es/guide/routing.html) 
+-   [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) 
+-   [uuid](https://www.npmjs.com/package/uuid) 
 
 
 ## Autores
 
-- Mauro L. Ibarra P.
-- Johan E. Agudelo
+| [<img src="https://lh3.googleusercontent.com/a/AAcHTte1xmCZ9I4zVDv--w3aNuKsCZ5oScMvDlV4NS8T=s288-c-no" width=115><br><sub>Juan Carlos Herazo Plazas.</sub>](https://gitlab.com/juan.herazop) <br/> | [<img src="https://lh3.googleusercontent.com/a-/AD_cMMSNeU-DRdaCVdZsA__CiiaMlIksLUGso-17AHT5=s240-p-k-rw-no" width=115><br><sub>María Fernanda Jiménez Heredia.</sub>](https://gitlab.com/fernanda.jimenezh) <br/> |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 
-## Relacionados
-
-- [Proyecto Karate Base](https://github.com/amitmerchant1990/markdownify-web)
-
-
-## Roadmap
-
-- [Guia QA](https://github.com/amitmerchant1990/pomolectron) - (En construcción) Una guia de proyectos Orientados a la Calidad de Software
