@@ -8,20 +8,6 @@
 
 <h4 align="center">Proyecto base de <a href="https://github.com/karatelabs/karate" target="_blank">Pragma</a>.</h4>
 
-<p align="center">
-  <a href="https://badge.fury.io/js/electron-markdownify">
-    <img src="https://badge.fury.io/js/electron-markdownify.svg"
-         alt="Gitter">
-  </a>
-  <a href="https://gitter.im/amitmerchant1990/electron-markdownify"><img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg"></a>
-  <a href="https://saythanks.io/to/bullredeyes@gmail.com">
-      <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
-  </a>
-  <a href="https://www.paypal.me/AmitMerchant">
-    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
-  </a>
-</p>
-
 # cypress-nodejs-automatizacion-Backend
 
 
@@ -33,11 +19,10 @@ En este proyecto, utilizaremos Node.js para crear scripts de prueba flexibles y 
 <p align="center">
   <a href="#topicos">Topicos</a> •
   <a href="#instalación-y-ejecución">Instalación y ejecución</a> •
-    <a href="#descarga">Descarga</a> •
-  <a href="#download">Descripción</a> •
-  <a href="#download">Consideraciones</a> •
-  <a href="#download">Tecnologias</a> •
-  <a href="#credits">Autores</a> •
+  <a href="#descarga">Descarga</a> •
+  <a href="#consideraciones">Consideraciones</a> •
+  <a href="#tecnologias">Tecnologias</a> •
+  <a href="#autores">Autores</a> •
 </p>
 
 ## Topicos
@@ -57,12 +42,22 @@ $ git clone https://github.com/somospragma/qa-backend-cypress-nodejs.git
 # Go into the repository
 $ cd qa-backend-cypress-nodejs
 
-# Install dependencies
-$ npm install
+# Install and run API proyect
+$ cd API
+$ npm i
+$ npm start
 
-# Run the app
+# Install and run Cypress project
+$ cd AutoApi
+$ npm i
+$ npm run cy:open
 
+# Run the Cypress project 
+
+# Mode console Cypress
 $ npm run cy:open,
+
+# Mode headless
 $ npm run cy:run,
 ```
 
@@ -74,6 +69,7 @@ Puedes descargar el proyecto en el enlace [download](https://github.com/somospra
 El proyecto usa como proyecto base los servicios del proyecto alojado en la carpeta de 'API', la cual se debe arrancar antes de ejecutar las pruebas.
 
 ## Tecnologias
+-   [Cypress](https://www.cypress.io/) 
 -   [express](https://expressjs.com/es/guide/routing.html) 
 -   [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) 
 -   [uuid](https://www.npmjs.com/package/uuid) 
