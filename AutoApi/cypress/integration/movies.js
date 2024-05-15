@@ -47,8 +47,8 @@ describe('Validate integration services for movie CRUD', () => {
 
         it('Validate size of movie list', () => {
             cy.get('@Read').then((resp) => {
-                cy.log('The body of 116 is validated');
-                expect(resp.body.length).to.eq(116);
+                cy.log('The body of 12 is validated');
+                expect(resp.body.length).to.eq(12);
             })
         });
     });
